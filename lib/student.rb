@@ -69,7 +69,7 @@ class Student
     
   end
   
-  
+  def update
 
 
 end
