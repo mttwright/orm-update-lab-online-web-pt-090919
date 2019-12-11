@@ -52,6 +52,9 @@ class Student
   end
   
   def self.new_from_db(array)
+    new = self.new(array[0], array[1], array[2])
+    new
+  end
 
 
 end
