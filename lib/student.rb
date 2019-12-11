@@ -35,7 +35,7 @@ class Student
   end
   
   def save
-    if !Student.find_by_name(self.name)
+    if Student.find_by_name(self.name)
       self.update
     else
     
