@@ -35,7 +35,9 @@ class Student
   end
   
   def save
-    if 
+    if !Student.find_by_name(self.name).empty?
+      self.update
+    else
     
     sql = <<-SQL
       INSERT INTO students (name, grade)
